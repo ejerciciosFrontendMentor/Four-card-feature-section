@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 :root {
@@ -11,6 +9,14 @@
   --color-VeryDarkBlue: #4c4e61;
   --color-GrayishBlue: #a3a5ae;
   --color-VeryLightGray: #fafafa;
+}
+html{
+  font-size: 16px;
+}
+@media screen and (min-width: 1300px) {
+  html{
+    font-size: 30px;
+  } 
 }
 body {
   width: 100%;
@@ -31,7 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .header {
     width: 40%;
     padding-top: 1rem;
@@ -51,6 +57,7 @@ body {
   margin: 0 auto;
 }
 .text {
+  font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--color-GrayishBlue);
@@ -65,7 +72,7 @@ body {
   grid-template-rows: repeat(4, auto);
   gap: 1.25rem;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .main {
   width: 80%;
   margin-left: auto;
@@ -126,15 +133,17 @@ body {
   background-image: url(../images/icon-calculator.svg);
 }
 .card__title {
+  font-size: 1.17rem;
   font-weight: 600;
   margin-bottom: 0.3125rem;
 }
 .card__text {
+  font-size: 1rem;
   font-weight: 200;
   line-height: 1.25rem;
   color: var(--color-GrayishBlue);
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .card:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/3;
